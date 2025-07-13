@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aplicație Meteo</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Meteo Brașov</h1>
+    <input type="text" id="cityInput" placeholder="Introdu un oraș...">
+    <button onclick="getWeather()">Caută</button>
+    <button onclick="getWeatherByLocation()">Locație curentă</button>
+    <button onclick="askNotificationPermission()">Permisiuni notificări</button>
+    <button onclick="saveCity(document.getElementById('cityInput').value)">Salvează oraș</button>
+    <div id="weatherInfo"></div>
+    <div id="savedCities"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
