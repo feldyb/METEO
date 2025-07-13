@@ -89,7 +89,7 @@ function showNotification(text) {
   if (Notification.permission === "granted") {
     new Notification("Meteo", {
       body: text,
-      icon: "icon-192.png"
+      icon: "icon-192.jpg"
     });
   }
 }
