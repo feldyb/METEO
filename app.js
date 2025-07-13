@@ -95,3 +95,7 @@ function showNotification(text) {
 }
 
 loadSavedCities();
+setTimeout(() => {
+  const splash = document.getElementById("splash-screen");
+  if (splash) splash.style.display = "none";
+}, 4000);
